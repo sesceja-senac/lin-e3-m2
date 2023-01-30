@@ -1,0 +1,974 @@
+body {overflow-x: hidden;}
+.container, .pagina {
+    background-color: transparent;
+}
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+.bg1 {
+    background-image: url('../design/pg1/bg1.jpg');
+    background-color: transparent;
+    color: white;
+    background-position: top;
+    padding-bottom: 40px;
+}
+.bg1 .caixa {
+    color: white;
+    background-color: #008086;
+    border: none;
+}
+.exercicio-1 {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 100px;
+    padding-right: 40px;
+    margin: 110px auto 80px auto;
+}
+.enunciado-1 {
+    width: 680px;
+}
+.enunciado-1 img {
+    margin-top: -110px;
+    width: 679px;
+}
+.enunciado-1 figcaption {
+    margin-top: -35px;
+    margin-left: 120px;
+}
+.exercicio-1 .caixa.icone {
+    padding: 15px;
+    padding-right: 20px;
+    padding-left: 60px;
+    margin: 0 0 0 100px;
+    max-width: 530px;
+    line-height: 1.1em;
+}
+.exercicio-1 .caixa p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.exercicio-1 .icone.praticar::before {
+    background-image: url('../img/vamos_praticar.png');
+    background-color: transparent;
+    height: 102px;
+    width: 89px;
+    left: -45px;
+    top: -5px;
+}
+.exercicio-1 .cell {
+    background-color: white;
+    display: block;
+    color: #333;
+    margin: 10px;
+    padding: 20px 25px;
+    width: 95%;
+    min-height: 220px;
+    box-shadow: 3px 3px 6px #333;
+}
+.questoes {    
+    max-width: 50%;
+}
+.exercicio-1 .row {
+    display: flex;
+    align-items: center;    
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
+#row-1 {
+    margin-top: 75px;
+    margin-left: -40px;
+}
+#row-2 {
+    margin-top: 140px;
+}
+.exercicio-1 .row .esquemaDaBru {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+.esquemaDaBru .btn-verdadeiro {
+    background-image: url('../design/pg1/bt-verdadeiro.png');
+    height: 64px;
+    width: 133px;
+    background-size: contain;
+    background-position: center;
+    border: none;
+    padding-top: 100px;
+}
+.esquemaDaBru .btn-falso {
+    background-image: url('../design/pg1/bt-falso.png');
+    height: 64px;
+    width: 133px;
+    background-size: contain;
+    background-position: center;
+    border: none;
+    padding-top: 100px;
+}
+.esquemaDaBru .btn-falso:hover {
+    background-image: url('../design/pg1/bt-falso-hover.png');
+}
+.esquemaDaBru .btn-verdadeiro:hover {
+    background-image: url('../design/pg1/bt-verdadeiro-hover.png');
+}
+.exercicio-1 .esquemaDaBru .btn-falso.selected.errado
+{
+    background-image: url('../design/pg1/bt-falso.png');
+}
+.exercicio-1 .esquemaDaBru .btn-verdadeiro.selected.errado
+{
+    background-image: url('../design/pg1/bt-verdadeiro.png');
+}
+.exercicio-1 .esquemaDaBru .btn-falso.selected.certo
+{
+    background-image: url('../design/pg1/bt-falso.png');
+}
+.exercicio-1 .esquemaDaBru .btn-verdadeiro.selected.certo
+{
+    background-image: url('../design/pg1/bt-verdadeiro.png');
+}
+h2 {
+    margin-left: -80px;
+}
+.caixa-ilustra {
+    background-image: url('../design/pg1/destaque1-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 852px;
+    height: 334px;
+    margin: 40px auto;
+    padding-left: 20px;
+    padding-right: 40px;
+}
+.caixa-ilustra img {
+    width: 450px;
+    margin-top: -30px;
+}
+.nota {
+    background-image: url('../design/pg1/destaque2.png');
+    width: 439px;
+    height: 392px;
+    padding: 95px 40px;
+    color: #333;
+    line-height: 1.3rem;
+    float: right;
+    margin-top: -20px;
+}
+.nota p {
+    transform: rotate(4deg);
+    font-weight: 600;
+}
+.bg2 {
+    background-image: url('../design/pg1/bg2.jpg');
+    background-attachment: fixed;
+    padding-top: 0px;
+    padding-bottom:260px;
+    position: relative;
+}
+.carousel.sesc {
+    margin: 60px auto;
+}
+.slideshow-lp {    
+    position: absolute;
+    bottom: -300px;
+    right: -400px;
+    /* background-image: url('../design/pg1/slideshow-tv.png'); */
+    background-size: contain;
+    background-repeat: no-repeat;    
+}
+.slideshow-lp #fig-1 img, .slideshow-lp #fig-2 img {
+    z-index: 0;
+    position: relative;
+    display: block;
+    margin: auto;
+}
+#fig-1 figcaption {margin-top: 5px;}
+#fig-2 figcaption {margin-top: -10px;}
+.slideshow-lp figcaption {
+    position: relative;
+    z-index: 20;
+    width: 400px;
+    margin: 0 auto;
+    line-height: 1.2rem;
+}
+.tv-container {
+    position: relative;
+    width: 705px;
+    height: 970px;
+    padding-top: 210px;
+    padding-right: 50px;
+}
+.slideshow-lp .tv-bg {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    z-index: 9;
+}
+.slideshow-lp #change-pic {
+    background-color: rgba(255, 255, 255, .6);
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: 295px;
+    right: 65px;
+    z-index: 99;
+    border-radius: 100%;
+    border: 2px solid #008086;
+}
+.container {
+    position: relative;
+}
+.caixa-ilustra-2 {
+    background-image: url('../design/pg1/popart-bg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 350px;
+    margin-top: 150px;
+    margin-bottom: 80px;
+}
+.caixa-ilustra-2 img {
+    width: 600px;
+    float: left;
+    margin-left: -200px;
+    margin-top: -80px;
+    margin-right: 20px;
+}
+.caixa-ilustra-2 .texto {
+    padding-top: 80px;
+    padding-right: 70px;
+    font-size: 20px;
+    color: white;
+}
+.caixa-ilustra-3 {
+    background-image: url('../design/pg1/destaque3.png');
+    padding-top: 60px;
+    padding-left: 170px;
+    padding-right: 60px;
+    line-height: 1.3rem;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 369px;
+    width: 456px;
+    color: white;
+    text-align: justify;
+    display: block;
+    margin: 40px auto;
+}
+.painel-container-1 {
+    display: flex;
+    padding: 0;
+    margin: 60px 0;
+}
+.painel-container-1 button {
+    margin: 0;
+    padding: 0;
+    width: 33vw;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    background-color: white;
+    position: relative;
+}
+.painel-container-1 button p {
+    margin: 0;
+    padding: 18px 0;
+    font-size: 20px;
+    position: relative;
+    z-index: 11;
+}
+.painel-container-1 button img {
+    max-width: 100%;
+    display: block;
+}
+.painel-container-1 button:hover::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 167, 178, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.painel-container-1 button:hover p {
+    background-color: #00A7B2;
+    color: white;
+}
+.modal-dialog:not(.modal-fullscreen) .btn-close {
+    background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+}
+.modal-dialog .modal-footer {
+    padding-right: 15px;
+}
+figure {
+    margin: 40px auto;
+}
+.borda-img {
+    border: 14px solid #ff9201;
+    box-shadow: 8px -8px #007f86;
+    border-radius: 18px;
+}
+.bowie-container {
+    display: flex;
+    margin: 30px auto;
+}
+.bowie-container img:first-of-type {
+    margin-right: -90px;
+}
+.bowie-container img:last-of-type {
+    margin-left: -90px;
+}
+.card-musica {
+    margin: 30px auto;
+}
+.bg3 {
+    background-image: url('../design/pg1/bg3.jpg');
+    padding: 35px 0;
+    padding-top: 50px;
+    position: relative;
+}
+.plaquinhas-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 35px auto;
+}
+.plaquinhas-container img {
+    width: 30%;
+}
+.marcador-span {
+    font-weight: bold;
+}
+.text-align-center {
+    text-align: center;
+}
+.full-width {
+    width: 100%;
+}
+table.sesc {
+    margin: 45px auto;
+}
+.caixa-ilustra-4 {
+    max-width: 494px;
+    min-height: 193px;
+    background-image: url('../design/pg1/bg3-destaque.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding-top: 55px;
+    padding-right: 40px;
+    padding-left: 40px;
+    transform: rotate(-2deg);
+    margin: 40px auto;
+}
+.bg4 {
+    background-image: url('../design/pg1/bg4.jpg');
+    position: relative;
+    padding-top: 45px;
+}
+.figure-bg4 {
+    float: right;
+    width: 450px;
+    margin-right: -100px;
+    margin-top: -20px;
+    margin-left: 30px;
+}
+.figure-bg4 img {
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+video {
+    background-color: #007f86;
+    margin: 40px auto;
+    display: block;
+    width: 100%;
+}
+.infografico-bg4 {
+    background-image: url('../design/pg1/bg4-refletir.png');
+    background-position: center top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 490px;
+    padding: 100px 70px 0;
+    color: white;
+    line-height: 1.4rem;
+    position: relative;
+    z-index: 4;
+}
+.infografico-bg4::before {
+    content: '';
+    background-image: url('../img/refletir.png');
+    width: 91px;
+    height: 101px;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.infografico-bg4 p {font-size: 17px;}
+.bg5 {
+    background-image: url('../design/pg1/bg5.jpg');
+}
+.bg5 > .container {
+    /* background-color: rgba(0, 127, 134, .9); */
+    background-color: rgba(4, 73, 74, .8);
+    color: white;
+    padding-bottom: 75px;
+    margin-top: -200px;
+    padding-top: 80px !important;
+}
+.divisoria-4 {
+    top: -300px;
+    width: 100%;
+    width: 2037px;
+    position: absolute;
+    left: -60px;
+}
+.divisoria-5 {
+    margin-top: -300px;
+    margin-bottom: -350px;
+    position: relative;
+    z-index: 10;
+    max-width: 100%;
+    z-index: 1;
+}
+
+.divisoria-6 {
+    margin-top: -120px;
+    position: relative;
+    z-index: 11;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 100%;
+}
+.infografico-tropical {
+    background-image: url('../design/pg1/bg5-infografico.png');
+    height: 496px;
+    width: 829px;
+    padding: 150px 240px 0 250px;
+    line-height: 1.5rem;
+    margin: 0 auto;
+}
+.infografico-tropical p {
+    font-size: 17px;
+}
+.infografico-tropical h4 {
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+.infografico-letra {
+    height: 823px;
+    width: 894px;
+    background-image: url('../design/pg1/bg5-musica.png');
+    display: flex;
+    color: black;
+    padding-top: 155px;
+    padding-left: 90px;
+    padding-right: 80px;
+    line-height: 1.2rem;
+    justify-content: space-between;
+    position: relative;
+    z-index: 5;
+    margin: 0 auto;
+}
+/* .infografico-letra::before {
+    content: '';
+    background-image: url('../design/pg1/bg5-musica-vinil.png');
+    width: 790px;
+    height: 795px;
+    position: absolute;
+    left: -400px;
+    z-index: -1;
+} */
+.letra-container {
+    position: relative;
+    margin: 40px 0;
+}
+.vinil:first-of-type {
+    position: absolute;
+    left: -350px;
+    top: 0;
+    z-index: 2;
+    animation: rotation 25s infinite linear;    
+}
+.vinil:last-of-type {
+    position: absolute;
+    right: -350px;
+    top: 0;
+    z-index: 2;
+    animation: rotation 25s infinite linear;    
+}
+.caixa-ilustra-5 {
+    background-image: url('../design/pg1/bg5-destaque1.png');
+    height: 287px;
+    width: 517px;
+    padding: 80px 50px 0 50px;
+    line-height: 1.3rem;
+}
+.caixa-ilustra-6 {
+    background-image: url('../design/pg1/bg5-destaque2.png'); 
+    height: 318px;
+    width: 543px;
+    padding: 130px 55px 0 75px;
+    color: black;
+    line-height: 1.3rem;
+}
+
+/* PG2 */
+.bg6 {
+    padding-top: 70px;
+    background-image: url('../design/pg2/bg1.jpg');
+    padding-bottom: 40px;
+    background-attachment: fixed;
+}
+.card-lp {    
+    margin: 20px;
+}
+
+.caixa-ilustra-7 {
+    width: 704px;
+    height: 223px;
+    background-image: url('../design/pg2/destaque.png');
+    padding: 60px 50px 0 40px;
+    color: white;
+    line-height: 1.4rem;
+    margin: 0px auto 30px auto;
+}
+.caixa-ilustra-8 {
+    width: 702px;
+    height: 181px;
+    background-image: url('../design/pg2/destaque2.png');
+    padding: 35px 50px 0 40px;
+    color: white;
+    line-height: 1.4rem;
+    margin: 0px auto 30px auto;
+}
+
+.semArte {
+    margin-left: -200px;
+    float: left;
+}
+
+#btn-evento {
+    height: 351px;
+    width: 547px;
+    display: block;
+    margin: 40px auto 80px auto;
+    background-image: url('../design/pg2/bt-evento.png');
+    background-color: transparent;
+    border: none;
+}
+#btn-evento:hover {
+    background-image: url('../design/pg2/bt-evento-hover.png');
+}
+
+.bg7 {
+    background-image: url('../design/pg2/bg2-img-dir.jpg');
+    background-position: right;
+    background-repeat: repeat-y;
+    padding-bottom: 70px;
+    padding-top: 40px;
+    background-color: #015d61;
+    color: white;
+}
+.bg8 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-image: url('../design/pg2/bg3.png');
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+.caixa-ilustra-9 {
+    background-image: url('../design/pg2/destaque-poetica.png');
+    height: 211px;
+    width: 567px;
+    padding-top: 60px;
+    color: black;
+    padding-left: 40px;
+    line-height: 1.3rem;
+    display: block;
+    margin: 30px auto;
+}
+.caixa-ilustra-10 {
+    background-image: url('../design/pg2/destaque-erropt.png');
+    width: 379px;
+    height: 340px;
+    padding-top: 70px;
+    padding-left: 70px;
+    color: black;
+    line-height: 1.4rem;
+    display: block;
+    margin: 30px auto;
+}
+.caixa-ilustra-11 {
+    background-image: url('../design/pg2/destque-manifesto.png');
+    width: 572px;
+    height: 405px;
+    padding: 70px 40px 0 40px;
+    color: black;
+    display: block;
+    margin: 30px auto;
+}
+.caixa-ilustra-12 {
+    background-image: url('../design/pg2/destaque-antropofagia.png');
+    width: 373px;
+    height: 351px;
+    padding: 100px 40px 0px 40px;
+    color: black;
+    line-height: 1.4rem;
+}
+.caixa-ilustra-13 {
+    background-image: url('../design/pg2/destaque-vocesabia.png');
+    width: 874px;
+    height: 398px;
+    padding: 80px 30px 0 280px;
+    color: black;
+    position: relative;
+    margin: 50px auto;
+}
+.caixa-ilustra-13::before {
+    content: '';
+    background-image: url('../img/saiba_mais.png');
+    position: absolute;
+    width: 95px;
+    height: 103px;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.painel-mandrade button {
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+}
+.painel-mandrade button:hover {
+    transform: translateY(-6px);
+}
+.obj-tropicalia {
+    width: 848px;
+    height: 857px;
+    display: block;
+    margin: 30px auto 0px auto;
+    background-image: url('../design/pg2/figura25.png');
+    position: relative;
+}
+.obj-tropicalia button {
+    position: absolute;
+    border: none;
+    width: 44px;
+    height: 44px;
+    background-color: transparent;
+    border-radius: 100%;
+}
+.obj-tropicalia #btn-tropical-1 {
+    background-image: url('../design/pg2/painel-disco-bt1.png');
+    left: 36%;
+    top: 34%;
+}
+.obj-tropicalia #btn-tropical-2 {
+    background-image: url('../design/pg2/painel-disco-bt2.png');
+    left: 42%;
+    top: 18%;
+}
+.obj-tropicalia #btn-tropical-3 {
+    background-image: url('../design/pg2/painel-disco-bt3.png');
+    right: 33%;
+    top: 10%;
+}
+.obj-tropicalia #btn-tropical-4 {
+    background-image: url('../design/pg2/painel-disco-bt4.png');
+    top: 33%;
+    left: 19%;
+}
+.obj-tropicalia #btn-tropical-5 {
+    background-image: url('../design/pg2/painel-disco-bt5.png');
+    right: 45%;
+    top: 47%;
+}
+.obj-tropicalia #btn-tropical-6 {
+    background-image: url('../design/pg2/painel-disco-bt6.png');
+    right: 32%;
+    top: 47%;
+}
+.obj-tropicalia #btn-tropical-7 {
+    background-image: url('../design/pg2/painel-disco-bt7.png');
+    top: 60%;
+    left: 42%;
+}
+.caixa-letra-pg2 {
+    background-color: #007f86;
+    width: 550px;
+    color: white;
+    padding: 25px 20px;
+    margin: 40px 0;
+    position: relative;
+    border-radius: 25px;
+    z-index: 2;
+}
+.caixa-letra-pg2::after {
+    content: '';
+    background-image: url('/assets/design/pg2/destaque-musmousoica-balao.png');
+    background-repeat: no-repeat;
+    height: 191px;
+    width: 187px;
+    position: absolute;
+    right: -191px;
+    bottom: 50px;
+    z-index: 2;
+}
+.caixa-letra-img {
+    width: 505px;
+    height: 719px;
+    position: absolute;
+    top: 0;
+    right: -140px;
+    z-index: 1;
+}
+.caixa-letra-container {
+    position: relative;
+}
+.caixa-ilustra-14 {
+    background-color: #dddacb;
+    width: 600px;
+    margin: 40px auto 0 auto;
+    padding: 20px;
+    border-radius: 25px;
+    z-index: 5;
+    position: relative;
+    color: black;
+}
+.caixa-ilustra-14 p {
+    margin-bottom: 0;
+}
+.img-ilustra-14 {
+    margin: -115px auto 40px auto;
+    display: block;
+    z-index: 1;
+    position: relative;
+}
+.bg9 {
+    background-image: url('../design/pg3/bg1.jpg');
+    padding-top: 90px;
+    padding-bottom: 40px;
+}
+.bg10 {
+    background-image: url('../design/pg3/bg2.jpg');
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: white;
+}
+.bg11 {
+    background-image: url('../design/pg3/bg3.jpg');
+    background-attachment: fixed;
+    padding-top: 40px;
+    padding-bottom: 70px;
+}
+.painel-helio {
+    display: flex;
+    flex-direction: column;
+}
+.btn-helio {
+    text-transform: uppercase;
+    background-color: #007f86;
+    color: white;
+    height: 45px;
+    border: none;
+    margin: 1px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.btn-helio:hover {
+    color: black;
+    background-color: #ff9200;
+}
+.painel-helio-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items:flex-start;
+    margin: 40px auto;
+    
+}
+.painel-helio-container .figura-helio figcaption {
+    text-align: left;
+    margin-top: 0;
+}
+.painel-helio-container .botoes-helio {
+    width: 45%;
+    padding-left: 15px;
+}
+.painel-helio-container figure{
+    margin: 0;
+}
+.caixa-ilustra-15 {
+    display: flex;
+    background-image: url('../design/pg3/destaque-vocesabia.png');
+    width: 792px;
+    height: 452px;
+    color: white;
+    padding-top: 120px;
+    padding-left: 60px;
+    padding-right: 35px;
+}
+.c15-texto {
+    width: 40%;
+}
+.caixa-ilustra-15 figure {
+    margin: 0;
+    margin-top: -45px;
+}
+.caixa-ilustra-16 {
+    background-image: url('../design/pg3/destaque-manifesto-tropicalista.png');
+    width: 890px;
+    height: 548px;
+    display: flex;
+    padding-top: 60px;
+    padding-left: 55px;
+    color: black;
+    margin: 50px auto;
+}
+.c16-texto {
+    width: 40%;
+}
+.c16-img {
+    padding-left: 15px;
+    margin-top: -30px;
+}
+.caixa-ilustra-17 {
+    width: 792px;
+    height: 269px;
+    padding: 50px;
+    padding-top: 70px;
+    background-image: url('../design/pg3/destaque-futebol.png');
+    color: white;
+    margin: 40px auto;
+}
+.painel-futebol {
+    background-image: url('../design/pg3/painel-futebol.png');
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 704px;
+    height: 369px;
+    margin: 40px auto;
+    padding-bottom: 50px;
+}
+.painel-futebol button {
+    height: 152px;
+    width: 157px;
+    background-position: center;
+    background-size: contain;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    transition-duration: .3s;
+}
+.painel-futebol button:hover {
+    transform: scale(1.05);
+    transition-duration: .3s;
+}
+#btn-fut-1 {
+    background-image: url('../design/pg3/painel-futebol-bt1.png');
+    
+}
+#btn-fut-2 {
+    background-image: url('../design/pg3/painel-futebol-bt2.png');
+    margin-bottom: 60px;
+}
+#btn-fut-3 {
+    background-image: url('../design/pg3/painel-futebol-bt3.png');
+    right: 0;
+}
+.bg12 {
+    background-image: url('../design/referencias_pg4/bg1.jpg');
+    color: white;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.bg12 h3 {
+    color: white;
+}
+.bg13 {
+    background-image: url('../design/referencias_pg4/bg2-fixo.jpg');
+    background-attachment: fixed;
+    padding-bottom: 70px;
+    padding-top: 50px;
+}
+.object-true-or-false {
+    margin: 40px auto;
+}
+
+/* IMAGENS PARALLAX DOS LADOS */
+.rellax {
+    position: absolute;
+    max-width: 400px;
+}
+.rellax-1 {
+    right: 0;
+    top: 500px;
+}
+.rellax-2 {
+    left: 0;
+    top: 3300px;
+}
+.rellax-3 {
+    right: 0;
+    top: 2700px;
+}
+.rellax-4 {
+    right: 0;
+    top: 2700px;
+}
+.rellax-5 {
+    left: 0;
+    bottom: -500px;
+}
+.rellax-6 {
+    right: 0;
+    bottom: 0;
+}
+.rellax-7 {
+    right: 0;
+    bottom: 0;
+}
+.rellax-8 {
+    top: 2700px;
+}
+.rellax-9 {
+    right: -20px;
+    top: 3700px;
+}
+.rellax-10 {
+    right: 0;
+    top: 2900px;
+}
+.rellax-11 {
+    right: 0;
+    bottom: -1800px;
+}
+
+@media (min-width: 1400px){
+    .bg5 > .container {
+        max-width: 1050px;
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+}
