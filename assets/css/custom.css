@@ -957,7 +957,58 @@ video {
     right: 0;
     bottom: -1800px;
 }
+.xs-only {
+    display: none;
+}
+.sesc-audio-player {
+    background-color: transparent;
+    margin-top: 0px;
+}
 
+.laranja {
+    /* background-color: #ff9200; */
+    color: black;
+    height: 100%;
+    background-image: url('../design/pg3/destaque-tv2.png');
+    width: 1078px;
+    height: 769px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 50px;
+    padding-left: 80px;
+}
+.laranja p {
+    width: 700px;
+    line-height: 1.3rem;
+    margin: 0 auto;
+    display: block;
+}
+.fonte-laranja {
+    text-align: right;
+}
+.branco img {
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+.branco {
+    position: relative;
+    /* background-color: white; */
+    background-image: url('../design/pg3/destaque-tv.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 40px;
+    padding-top: 60px;
+    padding-right: 180px;
+    padding-left: 120px;
+    line-height: 1.4rem;
+    height: 570px;
+    width: 1044px;
+}
+.letra-74 {
+    display: flex;
+    justify-content: space-between;
+}
 @media (min-width: 1400px){
     .bg5 > .container {
         max-width: 1050px;
@@ -1132,6 +1183,104 @@ video {
         margin-left: auto;
         margin-top: 50px;
         width: 100%;
+    }
+    .caixa-ilustra-7, .caixa-ilustra-8 {
+        width: 100%;
+        height: auto;
+        background-image: unset;
+        background-color: #007178;
+        padding: 30px;
+    }
+    .bg7 {
+        background-image: unset;
+    }
+    .caixa-ilustra-9, .caixa-ilustra-10, .caixa-ilustra-11, .caixa-ilustra-13 {
+        background-image: unset;
+        background-color: #e0e2e6;
+        padding-top: unset;
+        padding-left: unset;
+        padding: 30px;
+        width: 100%;
+        height: auto;
+    }
+    .caixa-ilustra-13 {
+        padding-top: 90px;
+    }
+    .painel-mandrade button {
+        margin: 20px auto;
+        display: block;
+    }
+    .obj-tropicalia {
+        display: none;
+    }
+    .caixa-letra-pg2 {
+        width: 100%;
+    }
+    .caixa-letra-img {
+        display: none;
+    }
+    .caixa-ilustra-14 {
+        width: 100%;
+    }
+    .img-ilustra-14 {
+        width: 100%;
+        margin: -60px auto 50px auto;
+    }
+    .img-titulo {margin: 50px auto;}
+    .painel-helio-container {flex-direction: column-reverse; border: 1px solid #333; padding: 5px;}
+    .painel-helio-container .botoes-helio {width: 100%; padding-left: 0; padding: 10px;}
+    .painel-helio-container .figura-helio figcaption {text-align: center;}
+    .caixa-ilustra-15 {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        background-image: unset;
+        background-color: #007178;
+        padding: 20px;
+    }
+    .c15-texto, .c16-texto {width: 100%;}
+    .caixa-ilustra-15 figure {margin-top: 0;}
+    .caixa-ilustra-15 figure figcaption, .c16-img figcaption, .c16-img figure {margin-bottom: 0;}
+    .caixa-ilustra-16 {
+        background-image: unset;
+        width: 100%;
+        height: auto;
+        padding-top: 20px;
+        padding: 30px;
+        background-color: #e0e2e6;
+        flex-direction: column;
+    }
+    .caixa-ilustra-17 {
+        width: 100%;
+        height: auto;
+        background-color: #007178;
+        background-image: unset;
+        padding: 30px;
+        padding-top: 30px;
+    }
+    .painel-futebol {
+        width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+    }
+    .object-true-or-false {
+        display: none;
+    }
+    .xs-only {
+        display: unset;
+    }
+    .semArte {
+        margin-left: 0;
+        width: 100%;
+        margin: 10px auto;
+        float: unset;
+    }
+    #btn-evento {
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 200px;
+        background-position: center;
     }
 }
 
