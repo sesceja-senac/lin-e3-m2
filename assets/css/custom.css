@@ -773,6 +773,7 @@ video {
     background-attachment: fixed;
     padding-top: 40px;
     padding-bottom: 70px;
+    position: relative;
 }
 .painel-helio {
     display: flex;
@@ -964,6 +965,11 @@ video {
     background-color: transparent;
     margin-top: 0px;
 }
+.infografico-pg3 {
+    margin: 20px auto;
+    display: block;
+    width: 1100px;
+}
 
 .laranja {
     /* background-color: #ff9200; */
@@ -984,11 +990,13 @@ video {
     display: block;
 }
 .fonte-laranja {
+    margin-top: -60px;
+    margin-right: 40px;
     text-align: right;
 }
 .branco img {
     position: absolute;
-    top: 100px;
+    top: 130px;
     right: 0;
 }
 .branco {
@@ -1008,6 +1016,45 @@ video {
 .letra-74 {
     display: flex;
     justify-content: space-between;
+    margin: 40px auto;
+}
+.detalhe-fut {
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    height: 2600px;
+}
+.letra-40 {
+    background-image: url('../design/pg2/destaque-fundocancao.png');
+    background-size: contain;
+    height: 687px;
+    width: 1008px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    line-height: 1.3rem;
+    margin-left: -80px;
+    justify-content: center;
+    padding-top: 40px;
+}
+.letra-c {
+    margin: 25px;
+    text-align: center;
+}
+.letra-40 .letra-titulo {
+    background-color: white;
+    color: black;
+    margin-top: 0;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.letra-40 .letra-p {
+    background-color: rgba(255, 255, 255, .8);
+    color: black;
+    margin-top: 0;
+    padding: 10px;
+    border-radius: 20px;
 }
 @media (min-width: 1400px){
     .bg5 > .container {

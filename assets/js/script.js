@@ -10,3 +10,4 @@ $('#change-pic').click(function(){
         
     }
 })
+AOS.reset();

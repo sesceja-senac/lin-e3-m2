@@ -5,5 +5,6 @@ window.addEventListener('load', function(){
     })
 
     $('.preloader').fadeOut(300);
+    AOS.init();
+    AOS.refresh();
 })
-
