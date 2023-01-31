@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'marker';
+    src: url('../design/menu/PermanentMarker-Regular.ttf');
+}
+
 body {overflow-x: hidden;}
 .container, .pagina {
     background-color: transparent;
@@ -1098,6 +1103,51 @@ video {
 .sesc-audio-player input[type="range"] {
     width: 200px;
 }
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: fixed;
+    top: 115px;
+    left: 120px;
+    background-image: url('../design/menu/menu-bg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 540px;
+    width: 343px;
+    padding: 60px 0 60px 40px;
+    font-family: 'marker';
+    z-index: 20;
+    transition-duration: .3s;
+}
+.menu a {
+    color: #007178;
+    font-size: 22px;
+    text-decoration: none;
+}
+.menu-btn {
+    position: fixed;
+    border: none;
+    width: 70px;
+    height: 80px;
+    background-color: transparent;
+    top: 125px;
+    left: 30px;
+    transition-duration: .3s;
+    z-index: 20;
+}
+.menu-btn img {
+    width: 100%;
+}
+.menu-btn:hover {
+    transform: scale(1.05);
+    transition-duration: .3s;
+}
+.menu.hidden {
+    left: -800px;
+    transition-duration: .3s;
+}
 @media (min-width: 1400px){
     .bg5 > .container {
         max-width: 1050px;
@@ -1127,7 +1177,34 @@ video {
         margin-left: 0;
     }
 }
-
+@media (max-width: 920px){
+    .infografico-pg3 {
+        width: auto;
+        max-width: 100%;
+    }
+    .laranja {
+        width: auto;
+        height: auto;
+        padding-left: 0;
+    }
+    .branco {
+        width: auto;
+        padding-left: 15px;
+    }
+    .caixa-ilustra-16 {
+        max-width: 100%;
+        background-position: center;
+        background-size: cover;
+        height: auto;
+        padding-bottom: 40px;
+    }
+    .box-question2 {
+        overflow: hidden;
+    }
+    .detalhe-fut {
+        display: none;
+    }
+}
 @media (max-width:800px) {
     .exercicio-1 {
         flex-direction: column;
@@ -1388,6 +1465,38 @@ video {
         background-repeat: no-repeat;
         height: 200px;
         background-position: center;
+    }
+    .laranja {
+        background-color: #ff9200;
+        background-image: unset;
+        width: 100%;
+        padding: 15px;
+    }
+    .branco {
+        background-image: unset;
+        background-color: #ff9200;
+        height: auto;
+        padding: 15px;
+    }
+    .branco img {
+        display: none;
+    }
+    .bg10 {
+        background-attachment: unset;
+    }
+    .img-letra-74 {
+        display: none;
+    }
+    .laranja p {
+        width: auto;
+    }
+    .menu-btn {
+        left: 10px;
+        top: 10px;
+    }
+    .menu {
+        left: 10px;
+        top: 80px;
     }
 }
 

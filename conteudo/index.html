@@ -32,6 +32,17 @@
     <header id="topo" class="sesc no-print">
         <img src="../assets/img/cabecalho/cabecalho.png" class="d-none d-lg-block img-fluid" alt="">
     </header>
+    <button class="menu-btn">
+        <img src="../assets/design/menu/menu-hamburguer.png">
+    </button>
+    <div class="menu hidden">
+        <a href="index.html?page=1#link-intro">Introdução</a>
+        <a href="index.html?page=1#link-cultura">Cultura de massa</a>
+        <a href="index.html?page=1#link-pop">Pop art</a>
+        <a href="index.html?page=1#link-superlative">Superlative clauses</a>
+        <a href="index.html?page=1#link-jovem">Jovem guarda</a>
+        <a href="index.html?page=1#link-tropical">Tropicalismo</a>
+    </div>
     <!-- Section principal deve ter o booklet, pois faz parte do print.js -->
     <section id="booklet">
         <!--Dentro do section devemos ter um elemento com a classe paginas, para funcionar a paginação/print-->
@@ -57,7 +68,7 @@
                     <img src="../assets/design/pg1/img2-esq.png" alt="" data-rellax-speed="2" class="rellax rellax-2">
                     <img src="../assets/design/pg1/img3-dir.png" alt="" data-rellax-speed="2" class="rellax rellax-3">
                     <div class="container">
-                        <h2>Introdução</h2>
+                        <h2 id="link-intro">Introdução</h2>
                         <p>Ouça o <em>podcast</em> a seguir.</p>
                         <img src="../assets/design/pg1/podcast.png" class="img-fluid d-block mx-auto mt-5" alt="">
                         <div class="sesc-audio-player no-print">
@@ -276,7 +287,7 @@
                     <div class="container">
                         <!-- pagina -->
 
-                        <h2>Cultura de massa</h2>
+                        <h2 id="link-cultura">Cultura de massa</h2>
                         <p>Foi nos Estados Unidos também que se fortaleceu um modo de produção de cultura que modificou
                             a maneira com que são consumidos bens artísticos e culturais. Essa forma é fruto de um
                             sistema de produção capitalista, que viu na demanda por arte a necessidade de produzir bens
@@ -420,7 +431,7 @@
 
                         <!-- pagina -->
 
-                        <h2><em>Pop art</em></h2>
+                        <h2 id="link-pop"><em>Pop art</em></h2>
 
 
                         <div data-aos="fade-right" class="caixa-ilustra-2">
@@ -830,7 +841,7 @@
                     <div class="container">
                         <!-- pagina -->
 
-                        <h2>Superlative clauses</h2>
+                        <h2 id="link-superlative">Superlative clauses</h2>
                         <p>Entre os elementos utilizados pela cultura de massa há também o uso de termos que visam
                             contribuir para a adesão de tal cultura. É provável que, em algum momento, já tenhamos
                             despertado nosso desejo por algo, seja cultural ou comercial, ao nos depararmos com
@@ -919,7 +930,7 @@
                     <div class="container">
                         <!-- pagina -->
 
-                        <h2>Jovem Guarda</h2>
+                        <h2 id="link-jovem">Jovem Guarda</h2>
                         <figure class="figure-bg4">
                             <img src="../assets/design/pg1/figura14.png"
                                 alt="No lado esquerdo aparece o cantor Erasmo Carlos; no centro, a cantora Wanderléa e, no lado direito, o cantor Roberto Carlos">
@@ -996,7 +1007,7 @@
                 <div class="container-fluid bg5">
                     <img src="../assets/design/pg1/bg5-img.png" alt="" class="divisoria-6">
                     <div class="container">
-                        <h2>Tropicalismo</h2>
+                        <h2 id="link-tropical">Tropicalismo</h2>
                         <p>Foi nesse contexto que surgiu uma corrente estética que tentaria explicar o Brasil por meio
                             da arte, em especial da canção popular brasileira. Popularizado a partir das composições de
                             Caetano Veloso e Gilberto Gil, o “Tropicalismo” tornou-se um movimento estético de grande
@@ -2400,7 +2411,7 @@
                                             et Circenses</em>. Leia a letra da canção a seguir.
                                     </p>
 
-                                    <p>
+                                    <p><br>
                                         Eu quis cantar minha canção iluminada de sol <br>
                                         Soltei os panos sobre os mastros no ar <br>
                                         Soltei os tigres e os leões nos quintais <br>

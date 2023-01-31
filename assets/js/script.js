@@ -10,4 +10,11 @@ $('#change-pic').click(function(){
         
     }
 })
-AOS.reset();
+
+$('.menu-btn').click(function (){
+    if($('.menu').hasClass('hidden')){
+        $('.menu').removeClass('hidden')
+    } else {
+        $('.menu').addClass('hidden')
+    }
+})
