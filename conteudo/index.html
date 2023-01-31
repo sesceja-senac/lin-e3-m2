@@ -35,14 +35,7 @@
     <button class="menu-btn">
         <img src="../assets/design/menu/menu-hamburguer.png">
     </button>
-    <div class="menu hidden">
-        <a href="index.html?page=1#link-intro">Introdução</a>
-        <a href="index.html?page=1#link-cultura">Cultura de massa</a>
-        <a href="index.html?page=1#link-pop">Pop art</a>
-        <a href="index.html?page=1#link-superlative">Superlative clauses</a>
-        <a href="index.html?page=1#link-jovem">Jovem guarda</a>
-        <a href="index.html?page=1#link-tropical">Tropicalismo</a>
-    </div>
+    
     <!-- Section principal deve ter o booklet, pois faz parte do print.js -->
     <section id="booklet">
         <!--Dentro do section devemos ter um elemento com a classe paginas, para funcionar a paginação/print-->
@@ -63,6 +56,14 @@
         </header>
         <section class="paginas">
             <div class="pagina pagina-1">
+                <div class="menu hidden">
+                    <a href="index.html?page=1#link-intro">Introdução</a>
+                    <a href="index.html?page=1#link-cultura">Cultura de massa</a>
+                    <a href="index.html?page=1#link-pop">Pop art</a>
+                    <a href="index.html?page=1#link-superlative">Superlative clauses</a>
+                    <a href="index.html?page=1#link-jovem">Jovem guarda</a>
+                    <a href="index.html?page=1#link-tropical">Tropicalismo</a>
+                </div>
                 <div class="container-fluid bg1">
                     <img src="../assets/design/pg1/img1-esq.png" alt="" data-rellax-speed="2" class="rellax rellax-1">
                     <img src="../assets/design/pg1/img2-esq.png" alt="" data-rellax-speed="2" class="rellax rellax-2">
@@ -1134,6 +1135,12 @@
                 </div>
             </div>
             <div class="pagina pagina-2">
+                <div class="menu hidden">
+                    <a href="index.html?page=2#link-modernismo">Modernismo</a>
+                    <a href="index.html?page=2#link-arte">Arte literária</a>
+                    <a href="index.html?page=2#link-modernotropical">Semelhança do Modernismo e Tropicalismo
+                    </a>
+                </div>
                 <div class="container-fluid bg6">
                     <img src="../assets/design/pg2/img1.png" alt="" data-rellax-speed="2" class="rellax rellax-7">
                     <img src="../assets/design/pg2/img2-esq.png" alt="" data-rellax-speed="1" class="rellax rellax-8">
@@ -1141,7 +1148,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-8 col-xs-12">
-                                <h4>Modernismo</h4>
+                                <h4 id="link-modernismo">Modernismo</h4>
                                 <h4>!! cards, pg 30</h4>
                                 <p>Falando em manifesto, você já ouviu falar no Manifesto Pau-Brasil ou no Manifesto
                                     Antropófago?</p>
@@ -1405,7 +1412,7 @@
 
                     </div>
                 </div>
-                <div class="container-fluid bg7">
+                <div id="link-arte" class="container-fluid bg7">
                     <div class="container">
                         <p>Já na arte literária, enquanto os já mencionados parnasianos estavam preocupados com a forma
                             estética de seus poemas, os modernistas queriam subverter essa ideia, criando textos em que
@@ -1799,7 +1806,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="container-fluid bg8">
+                <div id="link-modernotropical" class="container-fluid bg8">
                     <img src="../assets/design/pg2/img4-dir.png" alt="" data-rellax-speed="2" class="rellax rellax-10">
                     <img src="../assets/design/pg2/img5-dir.png" alt="" data-rellax-speed="4" class="rellax rellax-11">
                     <div class="container">
@@ -2034,6 +2041,14 @@
                 </div>
             </div>
             <div class="pagina pagina-3">
+                <div class="menu hidden">
+                    <a href="index.html?page=1#link-intro">Introdução</a>
+                    <a href="index.html?page=1#link-cultura">Cultura de massa</a>
+                    <a href="index.html?page=1#link-pop">Pop art</a>
+                    <a href="index.html?page=1#link-superlative">Superlative clauses</a>
+                    <a href="index.html?page=1#link-jovem">Jovem guarda</a>
+                    <a href="index.html?page=1#link-tropical">Tropicalismo</a>
+                </div>
                 <div class="container-fluid bg9">
                     <div class="container">
                         <h4 class="visually-hidden">E na arte? </h4>
@@ -3003,6 +3018,9 @@
                 </div>
             </div>
             <div class="pagina pagina-4">
+                <div class="menu hidden">
+                    
+                </div>
                 <div class="container-fluid bg12">
                     <div class="container">
                         <h2>Saiba mais</h2>
@@ -3724,6 +3742,7 @@
             document.body.appendChild(scriptElem);
 
     </script>
+    <script>AOS.refresh()</script>
 </body>
 
 </html>

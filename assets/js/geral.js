@@ -8,3 +8,4 @@ window.addEventListener('load', function(){
     AOS.init();
     AOS.refresh();
 })
+window.setTimeout(function(){AOS.refresh()}, 1000)

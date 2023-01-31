@@ -18,3 +18,21 @@ $('.menu-btn').click(function (){
         $('.menu').addClass('hidden')
     }
 })
+
+// reposicionamento do botao do menu
+
+    $(window).scroll(function() {
+
+      var topPos = $(this).scrollTop();
+
+      // if user scrolls down..
+      if (topPos > 100) {
+        $('.menu-btn').css("top", "20px");
+        $('.menu').css("top", "10px");
+
+      } else {
+        $('.menu-btn').css("top", "125px");
+        $('.menu').css("top", "115px");
+      }
+
+    }); // scroll END

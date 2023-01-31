@@ -3,7 +3,11 @@
     src: url('../design/menu/PermanentMarker-Regular.ttf');
 }
 
-body {overflow-x: hidden;}
+body {
+    /* width: 100%; */
+    /* min-height: 100%; */
+    overflow-x: hidden;
+}
 .container, .pagina {
     background-color: transparent;
 }
@@ -433,7 +437,7 @@ video {
 }
 .divisoria-4 {
     top: -300px;
-    width: 100%;
+    /* max-width: 100%; */
     width: 2037px;
     position: absolute;
     left: -60px;
@@ -1136,6 +1140,7 @@ video {
     left: 30px;
     transition-duration: .3s;
     z-index: 20;
+    margin-bottom: 15px;
 }
 .menu-btn img {
     width: 100%;
@@ -1147,6 +1152,11 @@ video {
 .menu.hidden {
     left: -800px;
     transition-duration: .3s;
+}
+.pagina-2 .menu {
+    justify-content: flex-start;
+    padding-right: 5px;
+    padding-left: 20px;
 }
 @media (min-width: 1400px){
     .bg5 > .container {
