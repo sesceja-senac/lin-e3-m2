@@ -1180,6 +1180,14 @@ video {
     line-height: 1.3rem;
     pointer-events: none;
 }
+.modal-galeria.tres {
+    left: 0;
+    bottom: -50%;
+}
+.modal-galeria.nara {
+    left: 0;
+    bottom: 0;
+}
 .modal-galeria p {
     margin-bottom: 0;
 }
