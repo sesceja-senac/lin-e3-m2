@@ -10,6 +10,7 @@ var questions = [{
     {
         id: 2,
         description: "Cultura de massa e publicidade andam, muitas vezes, lado a lado, vendendo não apenas produtos, mas também valores e estilo de vida. Nessa linha de pensamento, muitas séries animadas, especialmente nos anos 80, foram criadas com o intuito de vender brinquedos para o público infantil, como <em>Thundercats</em> e <em>He-man e os Mestres do Universo</em>.",
+        img_src: '../assets/design/pg1/figura1.jpg',
         bt_values: [1, 0],
         feedbacks: {
             certo: "Parabéns! Resposta correta.",
@@ -22,7 +23,7 @@ var questions = [{
         bt_values: [0, 1],
         feedbacks: {
             certo: "Parabéns! Resposta correta.",
-            errado: "No final dos anos 50, o mundo passava por um período em que os meios de comunicação em massa estavam conduzindo o gosto e o desejo das pessoas. Com o crescimento dos meios de comunicação, como a televisão e o rádio, além de jornais e revistas, houve um aumento na divulgação de produtos, estimulando o desejo das pessoas para a compra de produtos lançados pela mídia. Além de induzir os padrões sociais na vida das pessoas, a divulgação em massa desses produtos influenciava a moda, a arquitetura e a música, entre outras vertentes. Nesse cenário, muitos artistas começaram a se questionar sobre o padrão de consumo da época, nascendo assim o movimento artístico denominado pop art."
+            errado: "Resposta incorreta! No final dos anos 50, o mundo passava por um período em que os meios de comunicação em massa estavam conduzindo o gosto e o desejo das pessoas. Com o crescimento dos meios de comunicação, como a televisão e o rádio, além de jornais e revistas, houve um aumento na divulgação de produtos, estimulando o desejo das pessoas para a compra de produtos lançados pela mídia. Além de induzir os padrões sociais na vida das pessoas, a divulgação em massa desses produtos influenciava a moda, a arquitetura e a música, entre outras vertentes. Nesse cenário, muitos artistas começaram a se questionar sobre o padrão de consumo da época, nascendo assim o movimento artístico denominado pop art."
         }
     },
     {
@@ -37,10 +38,11 @@ var questions = [{
     {
         id: 5,
         description: "A Obra “Serigrafia Marilyn Monroe”, do artista Andy Warhol, faz parte do movimento <em>pop art</em>.",
+        img_src: '../assets/design/pg1/figura10.jpg',
         bt_values: [1, 0],
         feedbacks: {
             certo: "Parabéns! Resposta correta.",
-            errado: "Resposta incorreta. Naquela época, o atleta vencedor ganhava uma coroa de folhas de louro e uma cesta básica vitalícia como premiação. Para os gregos, o louro tinha um significado místico, simbolizando a imortalidade."
+            errado: "Resposta incorreta. A afirmação é verdadeira."
         }
     },
     {
@@ -73,6 +75,8 @@ var questions = [{
     {
         id: 9,
         description: "A arte moderna teve grande repercussão no Brasil e continua sendo marcada como um dos movimentos mais ricos e importantes da nossa cultura. A seguir, veja imagens de obras da arte moderna brasileira.",
+        img_src: '../assets/design/pg2/figura18.png',
+        img_src2: '../assets/design/pg2/figura19.png',
         bt_values: [1, 0],
         feedbacks: {
             certo: "Parabéns! Resposta correta.",
@@ -82,6 +86,8 @@ var questions = [{
     {
         id: 10,
         description: "A cultura de massa também faz parte do âmbito esportivo. Ídolos do futebol também influenciam seus fãs e se tornam referência. Um exemplo é o atleta Ronaldo Nazário, que, na Copa de 2002, apareceu com um corte de cabelo que virou febre entre crianças e adolescentes, que queriam ficar parecidos com o ídolo.",
+        img_src: '../assets/design/pg3/figura41.png',
+        img_src2: '../assets/design/pg3/figura42.png',
         bt_values: [1, 0],
         feedbacks: {
             certo: "Parabéns! Resposta correta.",
@@ -97,6 +103,8 @@ var QuizCorrida = {
     questionUI: null,
     feedbackUI: null,
     txt_description: null,
+    img_src: null,
+    img_src2: null,
     btn_true: null,
     btn_false: null,
     btsPista: null,
@@ -104,6 +112,8 @@ var QuizCorrida = {
         console.log(this.current)
         console.log(data[index].description);
         this.txt_description.innerHTML = data[index].description;
+        this.img_src.src = data[index].img_src
+        this.img_src2.src = data[index].img_src2
         this.btn_true.value = data[index].bt_values[0];
         this.btn_false.value = data[index].bt_values[1];
         this.questionUI.show();
@@ -201,6 +211,8 @@ var QuizCorrida = {
                 keyboard: false
             })
         this.txt_description = document.querySelector('#modal-question-description');
+        this.img_src = document.querySelector('#modal-question figure img')
+        this.img_src2 = document.querySelector('#modal-question .segunda-figura')
         this.btn_true = document.querySelector('.btn_true');
         this.btn_false = document.querySelector('.btn_false');
 

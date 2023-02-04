@@ -1191,6 +1191,28 @@ video {
 .modal-galeria p {
     margin-bottom: 0;
 }
+.visitada a {
+    opacity: 0.8;
+    background-color: rgba(221, 221, 221);
+}
+.pagination .active {
+    transform: translateY(-8px);
+    pointer-events:none;
+}
+.ytb {
+	height: 350px;
+	width: 700px;
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+#modal-question .modal-header {
+    flex-direction: column;
+}
+#modal-question .modal-header figure {
+    margin: 20px auto 0 auto;
+}
 
 @media (min-width: 1400px){
     .bg5 > .container {
