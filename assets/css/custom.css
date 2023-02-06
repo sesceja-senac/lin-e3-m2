@@ -1213,6 +1213,10 @@ video {
 #modal-question .modal-header figure {
     margin: 20px auto 0 auto;
 }
+.bt-print {
+    position: relative;
+    z-index: 80;
+}
 
 @media (min-width: 1400px){
     .bg5 > .container {

@@ -32,7 +32,7 @@
     <header id="topo" class="sesc no-print">
         <img src="../assets/img/cabecalho/cabecalho.png" class="d-none d-lg-block img-fluid" alt="">
     </header>
-    <button class="menu-btn">
+    <button class="menu-btn no-print">
         <img src="../assets/design/menu/menu-hamburguer.png">
     </button>
 
@@ -56,7 +56,7 @@
         </header>
         <section class="paginas">
             <div class="pagina pagina-1">
-                <div class="menu hidden">
+                <div class="menu no-print hidden">
                     <a href="index.html?page=1#link-intro">Introdução</a>
                     <a href="index.html?page=1#link-cultura">Cultura de massa</a>
                     <a href="index.html?page=1#link-pop">Pop art</a>
@@ -65,9 +65,9 @@
                     <a href="index.html?page=1#link-tropical">Tropicalismo</a>
                 </div>
                 <div class="container-fluid bg1">
-                    <img src="../assets/design/pg1/img1-esq.png" alt="" data-rellax-speed="2" class="rellax rellax-1">
-                    <img src="../assets/design/pg1/img2-esq.png" alt="" data-rellax-speed="2" class="rellax rellax-2">
-                    <img src="../assets/design/pg1/img3-dir.png" alt="" data-rellax-speed="2" class="rellax rellax-3">
+                    <img src="../assets/design/pg1/img1-esq.png" alt="" data-rellax-speed="2" class="rellax no-print rellax-1">
+                    <img src="../assets/design/pg1/img2-esq.png" alt="" data-rellax-speed="2" class="rellax no-print rellax-2">
+                    <img src="../assets/design/pg1/img3-dir.png" alt="" data-rellax-speed="2" class="rellax no-print rellax-3">
                     <div class="container">
                         <h2 id="link-intro">Introdução</h2>
                         <p>Ouça o <em>podcast</em> a seguir.</p>
@@ -91,7 +91,8 @@
                             </div>
 
                         </div>
-                        <div class="visually-hidden">
+                        <div class="visually-hidden print">
+                            <p><b>Transcrição:</b></p>
                             <p>Ainda em solo inglês, a burguesia percebeu o aumento da influência do clero junto à
                                 classe trabalhadora por meio de seus ensinos doutrinários. Com essa percepção e temendo
                                 a perda do poder que tinham na sociedade, os burgueses resolveram então apoiar e
@@ -400,8 +401,22 @@
                                 várias mulheres estadunidenses, tanto que acabou sendo conhecido como <em>The
                                     Rachel</em>.</p>
                         </div>
-
-                        <div class="slideshow-lp">
+                        <div class="visually-hidden print">
+                            <figure>
+                                <img src="../assets/design/pg1/figura5-tv.jpg" alt="Fotografia da atriz Giovana Antonelli caracterizada como a personagem Jade da novela O Clone. A atriz usa um véu branco e traz em sua mão uma pulseira conectada a um anel usado no seu dedo médio.">
+                                <figcaption>Figura 5 – Personagem Jade, interpretada pela atriz Giovana Antonelli
+                                    <br>
+                                    Fonte: Camara (2021)
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="../assets/design/pg1/figura6-tv.jpg" alt=" Fotografia da atriz Jennifer Aniston caracterizada como a personagem Rachel Green, do seriado americano Friends. A atriz tem o corte de cabelo repicado, na altura dos ombros, na cor castanho-claro.">
+                                <figcaption>Figura 6 – Personagem Rachel Green, interpretada pela atriz Jennifer
+                                    Aniston <br>
+                                    Fonte: Chang (2020) </figcaption>
+                            </figure>
+                        </div>
+                        <div aria-hidden="true" class="slideshow-lp no-print">
                             <div class="tv-container">
                                 <figure id="fig-1">
                                     <img src="../assets/design/pg1/figura5-tv.jpg"
@@ -639,8 +654,8 @@
                     </div>
                 </div>
                 <div class="container-fluid bg2">
-                    <img src="../assets/design/pg1/img4.png" alt="" data-rellax-speed="2" class="rellax rellax-4">
-                    <img src="../assets/design/pg1/img5.png" alt="" data-rellax-speed="2" class="rellax rellax-5">
+                    <img src="../assets/design/pg1/img4.png" alt="" data-rellax-speed="2" class="rellax no-print rellax-4">
+                    <img src="../assets/design/pg1/img5.png" alt="" data-rellax-speed="2" class="rellax no-print rellax-5">
                     <div class="container">
 
                         <!-- pagina -->
@@ -674,7 +689,7 @@
                             quadrinhos, além da utilização da figura de celebridades. A partir de agora, vamos conhecer
                             alguns dos artistas que deram vida ao movimento.</p>
                     </div>
-                    <div class="container-fluid painel-container-1">
+                    <div class="container-fluid painel-container-1 no-print">
 
                         <button type="button" data-bs-toggle="modal" data-bs-target="#modal-1">
                             <img src="../assets/design/pg1/painel-richard.jpg" alt="">
@@ -970,7 +985,9 @@
                             <img src="../assets/design/pg1/card-musica1-eng.png" alt="">
                             <img src="../assets/design/pg1/card-musica1-br.png" alt="">
                         </div>
-                        <h4>!! audios em ingles, letra de musica, pg 19</h4>
+                        <figcaption>
+                            Fonte: https://www.letras.mus.br/david-bowie/5399/. Acesso em: 21 out. 2022.
+                        </figcaption>
                         <p>Considerada como uma sucessão de imagens surreais, a composição de Bowie traz como tema
                             central vários dos elementos da cultura massificada. A alusão a uma América quebrada em que
                             Mickey Mouse se transforma em uma vaca demonstra o poder econômico que o rato da Walt Disney
@@ -1050,8 +1067,8 @@
                 </div>
                 <div class="container-fluid bg3">
                     <img src="../assets/design/pg1/bg3-img-esq.png" alt="" data-rellax-speed="2"
-                        class="rellax rellax-6">
-                    <img src="../assets/design/pg1/bg3-parallax.png" alt="" class="divisoria-4">
+                        class="rellax no-print rellax-6">
+                    <img src="../assets/design/pg1/bg3-parallax.png" alt="" class="divisoria-4 no-print">
                     <div class="container">
                         <!-- pagina -->
 
@@ -1219,11 +1236,11 @@
                         </div>
                     </div>
                     <div class="divisoria-container"><img src="../assets/design/pg1/bg4-img-inferior.png" alt=""
-                            class="divisoria-5"></div>
+                            class="divisoria-5 no-print"></div>
                 </div>
 
                 <div class="container-fluid bg5">
-                    <img src="../assets/design/pg1/bg5-img.png" alt="" class="divisoria-6">
+                    <img src="../assets/design/pg1/bg5-img.png" alt="" class="divisoria-6 no-print">
                     <div class="container">
                         <h2 id="link-tropical">Tropicalismo</h2>
                         <p>Foi nesse contexto que surgiu uma corrente estética que tentaria explicar o Brasil por meio
@@ -1251,7 +1268,7 @@
                             Para entender melhor, leia a letra da canção <em>Tropicália</em>, de Caetano Veloso.</p>
 
                         <div class="letra-container">
-                            <img src="../assets/design/pg1/bg5-musica-vinil.png" class="vinil" alt="">
+                            <img src="../assets/design/pg1/bg5-musica-vinil.png" class="vinil no-print" alt="">
                             <div class="infografico-letra">
 
                                 <p>
@@ -1319,7 +1336,7 @@
                                     Viva a banda-da-da <br>
                                     Carmem Miranda-da-da-da-da </p>
                             </div>
-                            <img src="../assets/design/pg1/bg5-musica-vinil.png" class="vinil" alt="">
+                            <img src="../assets/design/pg1/bg5-musica-vinil.png" class="vinil no-print" alt="">
                         </div>
                         <p>Na canção, podemos ver como o Tropicalismo buscava discutir o Brasil, não por meio de uma
                             identidade cultural única, mas por meio de suas contradições. No decorrer da letra, podemos
@@ -1352,16 +1369,16 @@
                 </div>
             </div>
             <div class="pagina pagina-2">
-                <div class="menu hidden">
+                <div class="menu no-print hidden">
                     <a href="index.html?page=2#link-modernismo">Modernismo</a>
                     <a href="index.html?page=2#link-arte">Arte literária</a>
                     <a href="index.html?page=2#link-modernotropical">Semelhança do Modernismo e Tropicalismo
                     </a>
                 </div>
                 <div class="container-fluid bg6">
-                    <img src="../assets/design/pg2/img1.png" alt="" data-rellax-speed="2" class="rellax rellax-7">
-                    <img src="../assets/design/pg2/img2-esq.png" alt="" data-rellax-speed="1" class="rellax rellax-8">
-                    <img src="../assets/design/pg2/img3-dir.png" alt="" data-rellax-speed="4" class="rellax rellax-9">
+                    <img src="../assets/design/pg2/img1.png" alt="" data-rellax-speed="2" class="rellax no-print rellax-7">
+                    <img src="../assets/design/pg2/img2-esq.png" alt="" data-rellax-speed="1" class="rellax no-print rellax-8">
+                    <img src="../assets/design/pg2/img3-dir.png" alt="" data-rellax-speed="4" class="rellax no-print rellax-9">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-8 col-xs-12">
@@ -1865,7 +1882,7 @@
                         <p>Outro importante autor modernista foi Mário de Andrade. A seguir, clique nas imagens e saiba
                             mais sobre sua principal obra, o livro <em>Macunaíma</em>. </p>
 
-                        <div class="painel-mandrade">
+                        <div class="painel-mandrade no-print">
                             <button type="button" data-bs-toggle="modal" data-bs-target="#modal-5">
                                 <img src="../assets/design/pg2/painel-bt1.png" alt="">
                             </button>
@@ -2027,8 +2044,8 @@
                     </div>
                 </div>
                 <div id="link-modernotropical" class="container-fluid bg8">
-                    <img src="../assets/design/pg2/img4-dir.png" alt="" data-rellax-speed="2" class="rellax rellax-10">
-                    <img src="../assets/design/pg2/img5-dir.png" alt="" data-rellax-speed="4" class="rellax rellax-11">
+                    <img src="../assets/design/pg2/img4-dir.png" alt="" data-rellax-speed="2" class="rellax no-print rellax-10">
+                    <img src="../assets/design/pg2/img5-dir.png" alt="" data-rellax-speed="4" class="rellax no-print rellax-11">
                     <div class="container">
                         <p>Agora podemos fazer um paralelo histórico entre os movimentos artísticos brasileiros. Você se
                             lembra de quem usava os indígenas para representar a nação? Os autores do Romantismo, certo?
@@ -2171,7 +2188,7 @@
                                 Debaixo da cama (os clarins da banda militar...) <br>
                                 Debaixo da cama (os clarins da banda militar...) <br>
                             </div>
-                            <img src="../assets/design/pg2/destaque-musica.png" class="caixa-letra-img" alt="">
+                            <img src="../assets/design/pg2/destaque-musica.png" class="caixa-letra-img no-print" alt="">
                         </div>
 
                         <p>VELOSO, Caetano. Disponível em https://www.letras.mus.br/caetano-veloso/178224/. Acesso
@@ -2192,7 +2209,7 @@
                                 Maria é literalmente, exatamente uma flor, mas que ela é como uma flor. Essa comparação
                                 em que não se utiliza a palavra “como” chamamos de metáfora. </p>
                         </div>
-                        <img src="../assets/design/pg2/destaque-maquina-escrever.png" alt="" class="img-ilustra-14">
+                        <img src="../assets/design/pg2/destaque-maquina-escrever.png" alt="" class="img-ilustra-14 no-print">
                         <div class="visually-hidden">
                             <p>Metáfora é uma figura de linguagem em que é feita uma comparação de maneira direta entre
                                 dois elementos, sem ser inseridas conjunções de comparação entre esses elementos. Como
@@ -2254,7 +2271,7 @@
                                 modificando o
                                 sentido de uma frase ou de um trecho. </p>
                         </div>
-                        <img src="../assets/design/pg2/destaque-maquina-escrever.png" alt="" class="img-ilustra-14">
+                        <img src="../assets/design/pg2/destaque-maquina-escrever.png" alt="" class="img-ilustra-14 no-print">
                         <p>Na frase citada, a conjunção “ou” serve para garantir uma ideia de alternância, ou seja,
                             garante uma sensação de alternativa, de possibilidade de escolha. No entanto, o
                             <em>slogan</em> do regime militar brasileiro parece não trabalhar em uma escolha
@@ -2272,7 +2289,7 @@
                 </div>
             </div>
             <div class="pagina pagina-3">
-                <div class="menu hidden">
+                <div class="menu no-print hidden">
                     <a href="index.html?page=3#link-enarte">E na arte?</a>
                     <a href="index.html?page=3#link-juventude">Por uma nova juventude</a>
                     <a href="index.html?page=3#link-futebol">A cultura de massa e o futebol</a>
@@ -2706,7 +2723,7 @@
                             <p>O choque entre essas duas parcelas é reforçado pela conjunção “mas”, que aqui modifica a
                                 frase ao incluir um valor de oposição entre os elementos que liga, chamada de <b>conjunção adversativa</b>.</p>
                         </div>
-                        <img src="../assets/design/pg2/destaque-maquina-escrever.png" alt="" class="img-ilustra-14">
+                        <img src="../assets/design/pg2/destaque-maquina-escrever.png" alt="" class="img-ilustra-14 no-print">
                         <p>Ao utilizar o “mas” para ligar as tentativas do eu lírico de chamar a atenção para si às
                             pessoas
                             que estão na sala de jantar, preocupadas apenas em viver e morrer, a canção opõe o lado que
@@ -2792,7 +2809,7 @@
                                 é para chamar o jovem da canção. A esse tipo de conjunção damos o nome de <b>conjunção
                                     condicional</b>.</p>
                         </div>
-                        <img src="../assets/design/pg2/destaque-maquina-escrever.png" alt="" class="img-ilustra-14">
+                        <img src="../assets/design/pg2/destaque-maquina-escrever.png" alt="" class="img-ilustra-14 no-print">
                         <p>Dessa forma, o que a apresentação de Os Mutantes no programa “Jovem Urgente” faz é
                             representar a
                             mudança de uma cultura de juventude, dessa vez mais consciente, transgressora da moralidade
@@ -3271,7 +3288,7 @@
                 </div>
             </div>
             <div class="pagina pagina-4">
-                <div class="menu hidden">
+                <div class="menu no-print hidden">
 
                 </div>
                 <div class="container-fluid bg12">
