@@ -2,6 +2,10 @@
     font-family: 'marker';
     src: url('../design/menu/PermanentMarker-Regular.ttf');
 }
+@font-face {
+    font-family: 'bree';
+    src: url('../design/menu/BreeSerif-Regular.ttf');
+}
 
 body {
     /* width: 100%; */
@@ -582,8 +586,8 @@ video {
 }
 
 .bg7 {
-    background-image: url('../design/pg2/bg2-img-dir.jpg');
-    background-position: right;
+    background-image: url('../design/pg2/bg2-img-dir.png');
+    background-position: 105%;
     background-repeat: repeat-y;
     padding-bottom: 70px;
     padding-top: 40px;
@@ -756,6 +760,7 @@ video {
     z-index: 5;
     position: relative;
     color: black;
+    font-family: 'bree';
 }
 .caixa-ilustra-14 p {
     margin-bottom: 0;
@@ -1103,7 +1108,7 @@ video {
     background-position: center;
     height: 540px;
     width: 343px;
-    padding: 60px 0 60px 40px;
+    padding: 60px 40px 60px 40px;
     font-family: 'marker';
     z-index: 20;
     transition-duration: .3s;
@@ -1112,6 +1117,22 @@ video {
     color: #007178;
     font-size: 22px;
     text-decoration: none;
+    position: relative;
+}
+.menu a::after {
+    left: -100px;
+    transition-duration: .3s;
+    content: '';
+    background-image: url('../design/menu/selecao.png');
+    width: 213px;
+    height: 10px;
+    bottom: -10px;
+}
+.menu a:hover::after {
+    
+    left: 0;
+    position: absolute;
+    transition-duration: .3s;
 }
 .menu-btn {
     position: fixed;
@@ -1136,10 +1157,14 @@ video {
     left: -800px;
     transition-duration: .3s;
 }
-.pagina-2 .menu {
+.pagina-2 .menu, .pagina-3 .menu {
     justify-content: flex-start;
-    padding-right: 5px;
+    padding-right: 20px;
     padding-left: 20px;
+}
+
+.pagina-2 .menu a, .pagina-3 .menu a{
+    margin-bottom: 40px;
 }
 
 /* galeria de artistas */
@@ -1217,7 +1242,9 @@ video {
     position: relative;
     z-index: 80;
 }
-
+.bg11 .icone.praticar::before {
+    background-color: transparent;
+}
 @media (min-width: 1400px){
     .bg5 > .container {
         max-width: 1050px;

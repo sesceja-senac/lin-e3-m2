@@ -65,13 +65,31 @@ body {
     transform: translateX(-50%);
     transition-duration: .3s;
     max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.link-start img {
+    align-self: center;
+    transition-duration: .3s;
 }
 .link-start:hover {
-    transform: translateX(-50%) scale(1.05);
     transition-duration: .3s;
 }
 .link-start img {
     max-width: 100%;
+}
+.start-bt {
+    position: absolute;
+    left: 40%;
+    z-index: 15;
+    bottom: 100px;
+}
+.start-bt img {
+    transition-duration: .3s;
+}
+.start-bt:hover img {
+    transform: scale(1.05);
+    transition-duration: .3s;
 }
 @media (max-width: 1000px) {
     .link-start { 

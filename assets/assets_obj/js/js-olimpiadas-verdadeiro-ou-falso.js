@@ -161,16 +161,19 @@ var QuizCorrida = {
         //Acertou 10 questões: medalha de ouro 
         //Acertou 8 ou mais: medalha de prata 
         //Acertou 5 ou mais: medalha de bronze 
-        document.querySelector('.object-window.finishScreen .mensagem').innerHTML = 'Parabéns! Você concluiu a atividade e ganhou o troféu da cultura e identidade!'
+        // document.querySelector('.object-window.finishScreen .mensagem').innerHTML = 'Parabéns! Você concluiu a atividade e ganhou o troféu da cultura e identidade!'
 
         let medal = "";
-        if (this.player_points === 10)
+        if (this.player_points === 10){
             medal = 'ouro'
-        else if (this.player_points >= 8)
+            document.querySelector('.object-window.finishScreen .mensagem').innerHTML = 'Parabéns! Você concluiu a atividade e ganhou o troféu de ouro da cultura e identidade!'
+        } else if (this.player_points >= 8){
             medal = 'prata'
-        else if (this.player_points >= 5)
+            document.querySelector('.object-window.finishScreen .mensagem').innerHTML = 'Parabéns! Você concluiu a atividade e ganhou o troféu de prata da cultura e identidade!'
+        }else if (this.player_points >= 5){
             medal = 'bronze'
-        else {
+            document.querySelector('.object-window.finishScreen .mensagem').innerHTML = 'Parabéns! Você concluiu a atividade e ganhou o troféu de bronze da cultura e identidade!'
+        }else {
             medal = 'nope';
             document.querySelector('.object-window.finishScreen .mensagem').innerHTML = "Clique no botão e jogue novamente.";
         }

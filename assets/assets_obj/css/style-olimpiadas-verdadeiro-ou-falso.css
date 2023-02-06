@@ -254,7 +254,10 @@
 .bt-show-question:disabled {
     opacity: .4;
 }
-
+.bt-show-question:nth-child(11):disabled {
+    opacity: 0;
+    pointer-events: none;
+}
 .bt-show-question:nth-child(1) {
     background-image: url(../img/bt_1.png);
     top: 80px;
@@ -346,17 +349,19 @@
 }
 
 .bt-show-question:nth-child(11) {
-    background-image: url(../img/podio03.png);
-    top: 0px;
-    left: 274px;
-    width: 200px;
-    height: 80px;
+    background-image: url('../img/bt_resultado_layout.png');
+    background-size: contain;
+    background-position: center;
+    bottom: 200px;
+    left: 220px;
+    width: 350px;
+    height: 300px;
     background-repeat: no-repeat;
     animation: none;
 }
 
 .bt-show-question.atual:nth-child(11) {
-    animation: scaleAtual 500ms ease-in-out alternate-reverse infinite;
+    animation: scaleAtual 1500ms ease-in-out alternate-reverse infinite;
 }
 
 .bt-show-question:nth-child(11)::before {
@@ -366,4 +371,22 @@
 
 .bt-show-question:nth-child(11)::after {
     display: none !important;
+}
+.bronze,.prata,.ouro {
+    width: 126px;
+    height: 170px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 10px auto;
+}
+.prata{
+    background-image: url('../img/t_prata.png');
+}
+.ouro{
+    background-image: url('../img/t_ouro.png');
+}
+.bronze{
+    background-image: url('../img/t_bronze.png');
 }
