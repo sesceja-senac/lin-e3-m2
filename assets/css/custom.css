@@ -25,6 +25,7 @@ body {
     color: white;
     background-position: top;
     padding-bottom: 40px;
+    background-attachment: fixed;
 }
 .bg1 .caixa {
     color: white;
@@ -189,9 +190,10 @@ h2 {
     margin: 60px auto;
 }
 .slideshow-lp {    
-    position: absolute;
+    position: static;
     bottom: -300px;
-    right: -400px;
+    right: -200px;
+    margin-top: -200px;
     /* background-image: url('../design/pg1/slideshow-tv.png'); */
     background-size: contain;
     background-repeat: no-repeat;    
@@ -234,6 +236,17 @@ h2 {
     z-index: 99;
     border-radius: 100%;
     border: 2px solid #008086;
+}
+.modal-slideshow {
+    background-color: rgba(33, 33, 33, .7);
+    z-index: 20;
+    width: auto;
+    display: block;
+    position: absolute;
+    padding: 10px;
+    border-radius: 15px;
+    top: 225px;
+    right: -25px;
 }
 .container {
     position: relative;
@@ -348,6 +361,7 @@ figure {
     padding: 35px 0;
     padding-top: 50px;
     position: relative;
+    line-height: 1.3rem;
 }
 .plaquinhas-container {
     display: flex;
@@ -1245,12 +1259,69 @@ video {
 .bg11 .icone.praticar::before {
     background-color: transparent;
 }
+.mobile-slide {
+    display: none;
+}
+.audio-ingles {
+    margin: 20px 0;
+    width: 100%;
+    padding: 0;
+}
+.sesc-audio-player.audio-ingles input[type="range"] {
+    width: 80%;
+    margin-left: 20px;
+}
+.audio-ingles .timestamp, .audio-ingles .btn-transcricao {display: none;}
+.ingles-title {
+    margin: 20px 0;
+    font-size: 32px;
+}
+.inline-player {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 50px;
+}
+table.table-audios td {
+    padding-top: 20px;
+}
+@media (min-width:1770px){
+    .bg7 {background-position: 105% !important;}
+}
 @media (min-width: 1400px){
     .bg5 > .container {
         max-width: 1050px;
     }
+    .bg7 {background-position: 130%;}
+}
+@media (max-width: 1390px){
+    .slideshow-lp {
+        margin-left: 80px;
+    }
+    .tv-container {
+        width: 605px;
+        height: 870px;
+        padding-right: 138px;
+        
+    }
+}
+@media (max-width: 1270px) {
+    .slideshow-lp {
+        margin-left: 60px;
+    }
+}
+@media (max-width: 1140px){
+    .slideshow-lp {
+        display: none;
+    }
+    .mobile-slide {
+        display: block;
+    }
 }
 @media (max-width: 1400px) {
+    .slideshow-lp {
+        /* display: none; */
+    }
     .rellax {
         max-width: 220px;
     }
@@ -1268,10 +1339,16 @@ video {
     .bg3 {
         background-position: -200px 0;
     }
+    .bg7 {
+        background-position: 135%;
+    }
 }
 @media (max-width:1300px) {
     h2 {
         margin-left: 0;
+    }
+    .bg7 {
+        background-image: unset;
     }
 }
 @media (max-width: 920px){
@@ -1303,6 +1380,27 @@ video {
     }
 }
 @media (max-width:1000px){
+    .bg6 {
+        background-image: unset;
+    }
+    .caixa-letra-img {
+        display: none;
+    }
+    .letra-40 {
+        background-image: unset;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .letra-c {
+        margin: 0 auto;
+        width: 90%;
+    }
+    .bg3 {background-position: -600px 0;}
+    .divisoria-4 {
+        display: none;
+    }
     .modal-galeria {
         position: static;
         background-color: transparent;
@@ -1319,8 +1417,6 @@ video {
         background-color: #007178;
         background-image: unset;
     }
-}
-@media (max-width:800px) {
     .exercicio-1 {
         flex-direction: column;
         padding-left: 15px;
@@ -1342,6 +1438,54 @@ video {
     .enunciado-1 figcaption {
         margin-top: 10px;
         margin-left: 0;
+    }
+    .enunciado-1 {
+        margin-left: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .enunciado-1 figure {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    #row-1, #row-2 {
+        margin-top: 5px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .exercicio-1 .caixa.icone.praticar {
+        margin-top: 60px;
+        padding-top: 30px;
+    }
+    .exercicio-1 .icone.praticar::before {
+        left: 50%;
+        transform: translateX(-50%);
+        top: -80px;
+    }
+    .obj-tropicalia {
+        max-width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .bg7 {
+        background-image: unset;
+    }
+}
+
+@media (max-width:800px) {
+    .bg7 {
+        background-image: unset;
+    }
+    .caixa-ilustra-12 {
+        max-width: 100%;
+    }
+    .painel-container-1 {
+        flex-direction: column;
+    }
+    .painel-container-1 button {
+        width: 100%;
     }
     #row-1 {
         margin-top: 0;
@@ -1381,7 +1525,7 @@ video {
         transform: unset;
     }
     .slideshow-lp {
-        display: none;
+        /* display: none; */
     }
     .caixa-ilustra-2 {
         height: auto;
@@ -1510,7 +1654,7 @@ video {
         display: block;
     }
     .obj-tropicalia {
-        display: none;
+        /* display: none; */
     }
     .caixa-letra-pg2 {
         width: 100%;
@@ -1615,6 +1759,16 @@ video {
     }
 }
 
+@media (max-width: 730px){
+    .obj-tropicalia > * {
+        display: none;
+    }
+    .obj-tropicalia {
+        background-position: bottom center;
+        height: 700px;
+    }
+}
+
 @keyframes rotation {
     from {
         transform: rotate(0deg);
@@ -1623,3 +1777,4 @@ video {
         transform: rotate(360deg);
       }
 }
+

@@ -1,5 +1,6 @@
 $('#fig-2').fadeOut()
 $('#change-pic').click(function () {
+    $('.modal-slideshow').fadeOut()
     if ($('#fig-2').css('display') == 'none') {
         $('#fig-1').fadeOut()
         window.setTimeout(function () { $('#fig-2').fadeIn() }, 700)
