@@ -1288,14 +1288,122 @@ table.table-audios td {
 .audio-hidden {
     display: none;
 }
+
+/* Efeito de card no hover */
+
+.cartaMemoria {
+    height: 280px;
+    width: 220px;
+    margin: 15px auto;
+    border-radius: 6px;
+    -webkit-perspective: 600px;
+    perspective: 600px;
+    /* position: relative;
+	font-size: 1em; */
+    cursor: pointer;
+    
+}
+
+.ladoFrente {
+    float: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 900;
+    width: 100%;
+    height: inherit;
+    text-align: center;
+    border-radius: 25px;
+    -webkit-transform: rotateX(0) rotateY(0);
+    transform: rotateX(0) rotateY(0);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    border-radius: 6px;
+}
+
+.ladoTras {
+    float: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 800;
+    width: 100%;
+    height: inherit;
+    -webkit-transform: rotateY(-179deg);
+    transform: rotateY(-179deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    border-radius: 15px;
+}
+.ladoFrente img, .ladoTras img {
+    width: 100%;
+}
+.cartaMemoria.flip .ladoFrente {
+    z-index: 900;
+    background: #333;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+    -webkit-transform: rotateY(179deg);
+    transform: rotateY(179deg);
+}
+
+.cartaMemoria.flip .ladoTras {
+    z-index: 1000;
+    -webkit-transform: rotateX(0) rotateY(0);
+    transform: rotateX(0) rotateY(0);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.cartaMemoria:not(.flip)>div.ladoFrente:hover {
+    transform: rotate3d(0, 45, 0, 15deg);
+    /* box-shadow: -8px 10px 27px rgb(0 0 0 / 40%); */
+}
+
+.cartaMemoria.flip>div.ladoTras:hover {
+    transform: rotate3d(0, 45, 0, 10deg);
+    /* box-shadow: -8px 10px 27px rgba(0, 0, 0, 0.2); */
+}
+
+.bg11 h2 {
+    color: #ff9200;
+    text-shadow: 2px 2px white;
+    font-size: 56px;
+    font-style: italic;
+    margin-left: -110px;
+}
+
 @media (min-width:1770px){
     .bg7 {background-position: 105% !important;}
+}
+@media (max-width:1480px){
+    .detalhe-fut {
+        left: -15%;
+    }
+}
+@media (max-width:1130px){
+    .detalhe-fut {display: none;}
+    .bg11 h2 {
+        margin-left: 0;
+    }
 }
 @media (min-width: 1400px){
     .bg5 > .container {
         max-width: 1050px;
     }
     .bg7 {background-position: 130%;}
+    .bg3 {background-position: 0%;}
+}
+@media (max-width:1770px){
+    .bg3 {background-position: 40%;}
 }
 @media (max-width: 1390px){
     .slideshow-lp {
@@ -1305,7 +1413,6 @@ table.table-audios td {
         width: 605px;
         height: 870px;
         padding-right: 138px;
-        
     }
 }
 @media (max-width: 1270px) {
@@ -1322,9 +1429,6 @@ table.table-audios td {
     }
 }
 @media (max-width: 1400px) {
-    .slideshow-lp {
-        /* display: none; */
-    }
     .rellax {
         max-width: 220px;
     }
@@ -1340,7 +1444,7 @@ table.table-audios td {
         width: 500px;
     }
     .bg3 {
-        background-position: -200px 0;
+        background-position: -210px 0;
     }
     .bg7 {
         background-position: 135%;
@@ -1353,6 +1457,7 @@ table.table-audios td {
     .bg7 {
         background-image: unset;
     }
+    .bg3 {background-position: 90%;}
 }
 @media (max-width: 920px){
     .infografico-pg3 {
@@ -1527,9 +1632,6 @@ table.table-audios td {
     .nota p {
         transform: unset;
     }
-    .slideshow-lp {
-        /* display: none; */
-    }
     .caixa-ilustra-2 {
         height: auto;
         background-image: unset;
@@ -1655,9 +1757,6 @@ table.table-audios td {
     .painel-mandrade button {
         margin: 20px auto;
         display: block;
-    }
-    .obj-tropicalia {
-        /* display: none; */
     }
     .caixa-letra-pg2 {
         width: 100%;

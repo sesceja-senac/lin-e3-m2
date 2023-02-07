@@ -46,3 +46,11 @@ $('.galeria-container').hover(function(){
     $(this).children('.modal-galeria').fadeOut()
 })
 if(window.innerWidth<1000){$('.modal-galeria').fadeIn()}
+
+$('.cartaMemoria').hover(function(){
+    if($(this).hasClass('flip')){
+        $(this).removeClass('flip')
+    }else{
+        $(this).addClass('flip')
+    }
+})
