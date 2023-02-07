@@ -54,3 +54,7 @@ $('.cartaMemoria').hover(function(){
         $(this).addClass('flip')
     }
 })
+
+if(window.location.search=='?page=4'){
+    $('.menu-btn').hide()
+}
