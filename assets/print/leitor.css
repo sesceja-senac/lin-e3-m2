@@ -584,7 +584,7 @@ button, a {
   position: relative !important;
   opacity: 1;
 }
-
+#modal-transcricao {display: none !important;}
 .modal.fade .modal-dialog {
   width: 100% !important;
 }

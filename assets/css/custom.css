@@ -99,11 +99,12 @@ body {
     margin-top: 140px;
 }
 .exercicio-1 .row .esquemaDaBru {
-    display: flex;
+    /* display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: center; */
     padding-top: 20px;
     margin-bottom: 0;
+    text-align: center;
 }
 .esquemaDaBru .btn-verdadeiro {
     background-image: url('../design/pg1/bt-verdadeiro.png');
@@ -113,6 +114,17 @@ body {
     background-position: center;
     border: none;
     padding-top: 100px;
+    display: inline-block;
+    margin: 0 auto;
+}
+.btn-bru {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.feedbacks {
+    text-align: center;
 }
 .esquemaDaBru .btn-falso {
     background-image: url('../design/pg1/bt-falso.png');
@@ -122,6 +134,8 @@ body {
     background-position: center;
     border: none;
     padding-top: 100px;
+    display: inline-block;
+    margin: 0 auto;
 }
 .esquemaDaBru .btn-falso:hover {
     background-image: url('../design/pg1/bt-falso-hover.png');
@@ -137,14 +151,19 @@ body {
 {
     background-image: url('../design/pg1/bt-verdadeiro.png');
 }
-.exercicio-1 .esquemaDaBru .btn-falso.selected.certo
+.exercicio-1 .esquemaDaBru .btn-falso.selected.certo, .exercicio-1 .alt-e.selected.certo
 {
     background-image: url('../design/pg1/bt-falso.png');
+    background-color: rgb(215, 235, 175) !important;
 }
-.exercicio-1 .esquemaDaBru .btn-verdadeiro.selected.certo
-{
-    background-image: url('../design/pg1/bt-verdadeiro.png');
+
+.exercicio-1 .alt-c.selected, .exercicio-1 .alt-e.selected {
+    border: 2px solid rgb(205, 205, 205);
+    border-radius: 15px;
+    background-color: transparent;
+    box-shadow: none;
 }
+
 h2 {
     margin-left: -80px;
 }

@@ -29,11 +29,13 @@ $(window).scroll(function () {
     // if user scrolls down..
     if (topPos > 100) {
         $('.menu-btn').css("top", "20px");
-        $('.menu').css("top", "10px");
+        if(window.innerWidth<809){$('.menu').css('top', '100px')}else{$('.menu').css("top", "10px");}
 
     } else {
         $('.menu-btn').css("top", "125px");
-        $('.menu').css("top", "115px");
+        if(window.innerWidth<809){$('.menu').css('top', '180px')}else{$('.menu').css("top", "115px");}
+        
+        
     }
 
 }); // scroll END
