@@ -745,7 +745,7 @@ video {
 }
 .caixa-letra-pg2::after {
     content: '';
-    background-image: url('/assets/design/pg2/destaque-musmousoica-balao.png');
+    background-image: url('/assets/design/pg2/destaque-musica-balao.png');
     background-repeat: no-repeat;
     height: 191px;
     width: 187px;
@@ -1284,6 +1284,9 @@ video {
 }
 table.table-audios td {
     padding-top: 20px;
+}
+.audio-hidden {
+    display: none;
 }
 @media (min-width:1770px){
     .bg7 {background-position: 105% !important;}
