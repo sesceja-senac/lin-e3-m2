@@ -12,6 +12,16 @@ body {
     /* min-height: 100%; */
     overflow-x: hidden;
 }
+#link-tropical{
+    margin-left: 0;
+    margin-top: 80px;
+}
+#link-superlative{
+    margin-left: 0;
+}
+#tit-center{
+    text-align: center;
+}
 .container, .pagina {
     background-color: transparent;
 }
@@ -264,8 +274,8 @@ h2 {
     position: absolute;
     padding: 10px;
     border-radius: 15px;
-    top: 225px;
-    right: -25px;
+    top: 216px;
+    right: 150px;
 }
 .container {
     position: relative;
@@ -1397,13 +1407,16 @@ table.table-audios td {
     text-shadow: 2px 2px white;
     font-size: 56px;
     font-style: italic;
-    margin-left: -110px;
+    margin-left: 0px;
 }
 
 @media (min-width:1770px){
     .bg7 {background-position: 105% !important;}
 }
 @media (max-width:1480px){
+    .rellax {
+        max-width: 200px;
+    }
     .detalhe-fut {
         left: -15%;
     }
@@ -1423,6 +1436,9 @@ table.table-audios td {
 }
 @media (max-width:1770px){
     .bg3 {background-position: 40%;}
+    .rellax {
+        max-width: 300px;
+    }
 }
 @media (max-width: 1390px){
     .slideshow-lp {
@@ -1440,6 +1456,9 @@ table.table-audios td {
     }
 }
 @media (max-width: 1140px){
+    #link-tropical{
+        margin-top: 100px;
+    }
     .slideshow-lp {
         display: none;
     }
@@ -1450,6 +1469,9 @@ table.table-audios td {
 @media (max-width: 1400px) {
     .rellax {
         max-width: 220px;
+    }
+    #imgesq{
+        top: 600px;
     }
     .enunciado-1 {
         margin-left: -100px;
@@ -1499,8 +1521,19 @@ table.table-audios td {
         height: auto;
         padding-bottom: 40px;
     }
+    #jogoOlimpiada{
+        margin: 0;
+        padding: 0;
+    }
+    #jogoOlimpiada > p{
+        padding-left: 60px;
+        padding-top: 10px;
+    }
+    #jogoOlimpiadaTit{
+        max-width: 60%;
+    }
     .box-question2 {
-        overflow: hidden;
+        overflow: scroll;
     }
     .detalhe-fut {
         display: none;
@@ -1602,6 +1635,10 @@ table.table-audios td {
 }
 
 @media (max-width:800px) {
+    
+    #link-tropical{
+        margin-top: 0px;
+    }
     .bg7 {
         background-image: unset;
     }
@@ -1827,9 +1864,9 @@ table.table-audios td {
         height: auto;
         background-repeat: no-repeat;
     }
-    .object-true-or-false {
+    /* .object-true-or-false {
         display: none;
-    }
+    } */
     .xs-only {
         display: unset;
     }
