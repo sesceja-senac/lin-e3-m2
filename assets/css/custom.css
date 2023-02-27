@@ -477,12 +477,10 @@ video {
     padding-top: 80px !important;
 }
 .divisoria-4 {
-    top: -200px;
-    max-width: 100%;
-    /* width: 2037px; */
-    position: absolute;
-    /* left: -60px; */
-    z-index: 1;
+    margin: 20px auto;
+    margin-top: -260px;
+    width: 100%;
+    display: block;
 }
 .divisoria-5 {
     margin-top: -300px;
@@ -1791,6 +1789,7 @@ table.table-audios td {
     .divisoria-4 {
         display: none;
     }
+    .bg2{padding-bottom: 80px;}
     .figure-bg4 {
         float: unset;
         margin-right: auto;
