@@ -177,9 +177,6 @@ p, figcaption{word-wrap: break-word;}
     box-shadow: none;
 }
 
-h2 {
-    margin-left: -80px;
-}
 .caixa-ilustra {
     background-image: url('../design/pg1/destaque1-bg.png');
     background-repeat: no-repeat;
