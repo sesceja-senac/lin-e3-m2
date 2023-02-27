@@ -12,6 +12,7 @@ body {
     /* min-height: 100%; */
     overflow-x: hidden;
 }
+p, figcaption{word-wrap: break-word;}
 #link-tropical{
     margin-left: 0;
     margin-top: 80px;
@@ -48,12 +49,14 @@ body {
     padding-left: 100px;
     padding-right: 40px;
     margin: 110px auto 80px auto;
+    
 }
+.bt-tooltip{border-bottom: 2px dashed;}
 .enunciado-1 {
     width: 680px;
 }
 .enunciado-1 img {
-    margin-top: -110px;
+    margin-top: -30px;
     width: 679px;
 }
 .enunciado-1 figcaption {
@@ -430,13 +433,7 @@ table.sesc {
     position: relative;
     padding-top: 45px;
 }
-.figure-bg4 {
-    float: right;
-    width: 450px;
-    margin-right: -100px;
-    margin-top: -20px;
-    margin-left: 30px;
-}
+
 .figure-bg4 img {
     width: 100%;
     margin: auto;
@@ -483,11 +480,12 @@ video {
     padding-top: 80px !important;
 }
 .divisoria-4 {
-    top: -300px;
-    /* max-width: 100%; */
-    width: 2037px;
+    top: -200px;
+    max-width: 100%;
+    /* width: 2037px; */
     position: absolute;
-    left: -60px;
+    /* left: -60px; */
+    z-index: 1;
 }
 .divisoria-5 {
     margin-top: -300px;
@@ -972,6 +970,7 @@ video {
 .rellax {
     position: absolute;
     max-width: 400px;
+    z-index: 3;
 }
 .rellax-1 {
     right: 0;
@@ -1005,7 +1004,7 @@ video {
     top: 2700px;
 }
 .rellax-9 {
-    right: -20px;
+    right: 0;
     top: 3700px;
 }
 .rellax-10 {
@@ -1412,6 +1411,10 @@ table.table-audios td {
 
 @media (min-width:1770px){
     .bg7 {background-position: 105% !important;}
+    .bg3 {background-position: 40%;}
+    .rellax {
+        max-width: 300px;
+    }
 }
 @media (max-width:1480px){
     .rellax {
@@ -1420,24 +1423,37 @@ table.table-audios td {
     .detalhe-fut {
         left: -15%;
     }
-}
-@media (max-width:1130px){
-    .detalhe-fut {display: none;}
-    .bg11 h2 {
-        margin-left: 0;
-    }
+    .vinil{width: 500px;}
+    .vinil:first-of-type{left: -124px;}
+    .vinil:last-of-type{right: -124px;}
 }
 @media (min-width: 1400px){
     .bg5 > .container {
         max-width: 1050px;
     }
     .bg7 {background-position: 130%;}
-    .bg3 {background-position: 0%;}
-}
-@media (max-width:1770px){
-    .bg3 {background-position: 40%;}
     .rellax {
-        max-width: 300px;
+        max-width: 220px;
+    }
+    #imgesq{
+        top: 600px;
+    }
+    .enunciado-1 {
+        margin-left: -100px;
+        margin-right: 40px;
+    }
+    .enunciado-1 figcaption {
+        margin-top: unset;
+        margin-left: 0;
+    }
+    .enunciado-1 img {
+        width: 400px;
+    }
+    .bg3 {
+        background-position: -210px 0;
+    }
+    .bg7 {
+        background-position: 135%;
     }
 }
 @media (max-width: 1390px){
@@ -1449,6 +1465,15 @@ table.table-audios td {
         height: 870px;
         padding-right: 138px;
     }
+}
+@media (max-width:1300px) {
+    h2 {
+        margin-left: 0;
+    }
+    .bg7 {
+        background-image: unset;
+    }
+    .bg3 {background-position: 90%;}
 }
 @media (max-width: 1270px) {
     .slideshow-lp {
@@ -1466,77 +1491,27 @@ table.table-audios td {
         display: block;
     }
 }
-@media (max-width: 1400px) {
-    .rellax {
-        max-width: 220px;
-    }
-    #imgesq{
-        top: 600px;
-    }
-    .enunciado-1 {
-        margin-left: -100px;
-        margin-right: 40px;
-    }
-    .enunciado-1 figcaption {
-        margin-top: unset;
+@media (max-width:1130px){
+    .detalhe-fut {display: none;}
+    .bg11 h2 {
         margin-left: 0;
     }
-    .enunciado-1 img {
-        width: 500px;
-    }
-    .bg3 {
-        background-position: -210px 0;
-    }
-    .bg7 {
-        background-position: 135%;
-    }
-}
-@media (max-width:1300px) {
-    h2 {
-        margin-left: 0;
-    }
-    .bg7 {
-        background-image: unset;
-    }
-    .bg3 {background-position: 90%;}
-}
-@media (max-width: 920px){
-    .infografico-pg3 {
-        width: auto;
-        max-width: 100%;
-    }
-    .laranja {
-        width: auto;
-        height: auto;
+    .infografico-pg3{max-width: 100%;}
+    .branco{
         padding-left: 0;
-    }
-    .branco {
-        width: auto;
-        padding-left: 15px;
-    }
-    .caixa-ilustra-16 {
         max-width: 100%;
-        background-position: center;
-        background-size: cover;
+    }
+    .laranja{
+        padding-left: 0;
+        max-width: 100%;
+    }
+    .menu-btn{left: 0;}
+    .exercicio-1{flex-wrap: wrap;}
+    .vinil:last-of-type{display: none;}
+    .caixa-letra-img{
+        max-width: 400px;
         height: auto;
-        padding-bottom: 40px;
-    }
-    #jogoOlimpiada{
-        margin: 0;
-        padding: 0;
-    }
-    #jogoOlimpiada > p{
-        padding-left: 60px;
-        padding-top: 10px;
-    }
-    #jogoOlimpiadaTit{
-        max-width: 60%;
-    }
-    .box-question2 {
-        overflow: scroll;
-    }
-    .detalhe-fut {
-        display: none;
+        right: 0;
     }
 }
 @media (max-width:1000px){
@@ -1633,7 +1608,45 @@ table.table-audios td {
         background-image: unset;
     }
 }
-
+@media (max-width: 920px){
+    .infografico-pg3 {
+        width: auto;
+        max-width: 100%;
+    }
+    .laranja {
+        width: auto;
+        height: auto;
+        padding-left: 0;
+    }
+    .branco {
+        width: auto;
+        padding-left: 15px;
+    }
+    .caixa-ilustra-16 {
+        max-width: 100%;
+        background-position: center;
+        background-size: cover;
+        height: auto;
+        padding-bottom: 40px;
+    }
+    #jogoOlimpiada{
+        margin: 0;
+        padding: 0;
+    }
+    #jogoOlimpiada > p{
+        padding-left: 60px;
+        padding-top: 10px;
+    }
+    #jogoOlimpiadaTit{
+        max-width: 60%;
+    }
+    .box-question2 {
+        overflow: scroll;
+    }
+    .detalhe-fut {
+        display: none;
+    }
+}
 @media (max-width:800px) {
     
     #link-tropical{
@@ -1915,8 +1928,8 @@ table.table-audios td {
         left: 10px;
         top: 80px;
     }
+    .pagina-2{overflow-x: hidden;}
 }
-
 @media (max-width: 730px){
     .obj-tropicalia > * {
         display: none;
@@ -1925,6 +1938,8 @@ table.table-audios td {
         background-position: bottom center;
         height: 700px;
     }
+    .caixa-ilustra-3{margin-left: -156px;}
+    .letra-74{justify-content: center;}
 }
 
 @keyframes rotation {
