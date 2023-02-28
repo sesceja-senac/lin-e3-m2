@@ -390,3 +390,50 @@
 .bronze{
     background-image: url('../img/t_bronze.png');
 }
+
+@media screen and (max-width:991px){
+ .object-true-or-false {
+    transform: scale(.7);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: calc((960px * .8) / -2);
+    margin-top: calc((960px * .8) / -2);
+    
+ }   
+ .crop {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+
+ }
+ .crop::before{
+    content: "";
+    width:100%;
+    height: auto;
+    padding-top: 100%;
+    max-width: 100%;
+    display: block;
+ }
+}
+
+@media screen and (max-width: 768px){
+    .object-true-or-false {
+        transform: scale(.5);       
+     }  
+     #quiz-points {
+        bottom: -50px;
+        font-size: 30px;
+      }
+}
+
+@media screen and (max-width: 400px){
+    .object-true-or-false {
+        transform: scale(.35);       
+     }  
+     #quiz-points {
+        bottom: -50px;
+        font-size: 40px;
+      }
+}

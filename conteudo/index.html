@@ -3124,7 +3124,7 @@
                             <p>Estudante, é hora de praticar! Teste seus conhecimentos sobre cultura e identidade no
                                 <em>game</em> a seguir.
                             </p>
-                            <div aria-hidden="true" class="box-question2 no-print">
+                            <div aria-hidden="true" class="box-question2 crop no-print">
                                 <div class="object-true-or-false no-print" aria-hidden="true">
                                     <div class="object-window startGame">
                                         <div class="title-object animate__animated animate__bounceIn">
@@ -3163,51 +3163,7 @@
                                         </div>
                                     </div>
 
-                                    <!-- Modal questao-->
-                                    <div class="modal animate__animated animate__zoomIn" id="modal-question"
-                                        data-bs-backdrop="static" tabindex="-1" role="dialog"
-                                        aria-labelledby="modal-question-description" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title" id="modal-question-description">Modal title
-                                                    </h5>
-                                                    <figure><img class="img-fluid d-block m-auto" src="" alt=""></figure>
-                                                    <figure><img class="img-fluid d-block m-auto segunda-figura" src="" alt=""></figure>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <div class="text-center">
-                                                        <button class="btn btn-success btn-lg btn_res btn_true"
-                                                            value="0" role="button">VERDADEIRO </button>
-                                                        <button class="btn btn-danger btn-lg btn_res btn_false"
-                                                            value="0" role="button">FALSO</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Modal feedback-->
-                                    <div class="modal  animate__animated animate__bounceIn" id="modal-quiz-feedback"
-                                        data-bs-backdrop="static" tabindex="-1" role="dialog"
-                                        aria-labelledby="modal-quiz-feedback-title" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title" id="modal-quiz-feedback-title"
-                                                        style="color: white;">Modal title</h5>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <div class="feedback-text"></div>
-                                                    <div class="feedback-img"></div>
-                                                    <div class="text-center">
-                                                        <button data-bs-dismiss="modal"
-                                                            class="btn btn-primary mt-4 btn-continue">CONTINUAR</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                   
                                     <audio id="snd-acerto">
                                         <source src="../assets/assets_obj/snd/acerto.mp3" type="audio/mpeg">
                                     </audio>
@@ -3222,6 +3178,51 @@
                                     </audio>
                                 </div>
                             </div>
+                             <!-- Modal questao-->
+                             <div class="modal animate__animated animate__zoomIn" id="modal-question"
+                             data-bs-backdrop="static" tabindex="-1" role="dialog"
+                             aria-labelledby="modal-question-description" aria-hidden="true">
+                             <div class="modal-dialog modal-dialog-centered" role="document">
+                                 <div class="modal-content">
+                                     <div class="modal-header">
+                                         <h5 class="modal-title" id="modal-question-description">Modal title
+                                         </h5>
+                                         <figure><img class="img-fluid d-block m-auto" src="" alt=""></figure>
+                                         <figure><img class="img-fluid d-block m-auto segunda-figura" src="" alt=""></figure>
+                                     </div>
+                                     <div class="modal-body">
+                                         <div class="text-center">
+                                             <button class="btn btn-success btn-lg btn_res btn_true"
+                                                 value="0" role="button">VERDADEIRO </button>
+                                             <button class="btn btn-danger btn-lg btn_res btn_false"
+                                                 value="0" role="button">FALSO</button>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+
+                         <!-- Modal feedback-->
+                         <div class="modal  animate__animated animate__bounceIn" id="modal-quiz-feedback"
+                             data-bs-backdrop="static" tabindex="-1" role="dialog"
+                             aria-labelledby="modal-quiz-feedback-title" aria-hidden="true">
+                             <div class="modal-dialog modal-dialog-centered" role="document">
+                                 <div class="modal-content">
+                                     <div class="modal-header">
+                                         <h5 class="modal-title" id="modal-quiz-feedback-title"
+                                             style="color: white;">Modal title</h5>
+                                     </div>
+                                     <div class="modal-body">
+                                         <div class="feedback-text"></div>
+                                         <div class="feedback-img"></div>
+                                         <div class="text-center">
+                                             <button data-bs-dismiss="modal"
+                                                 class="btn btn-primary mt-4 btn-continue">CONTINUAR</button>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
                             <div class="visually-hidden print">
                                 <h4>Verdadeiro ou falso?  </h4>
                                 <p>1) Cultura de massa é o conjunto de bens culturais que é produzido em larga escala. Seus objetivos são garantir o lucro e o consumo e atender às necessidades culturais e de entretenimento da sociedade.  </p>
